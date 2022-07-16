@@ -6,15 +6,15 @@ It behaves exactly the same except that it can also sort all vector types (uint2
 
 The sorting is performed using a parallel Merge-Sort method. This operator usually runs faster at sorting large and randomized array, however it is ~30% slower at sorting descending sequences or partially sorted arrays.
 
-## Build and install
-When building and using the CMake install command , a "**sort_array_with_indices**" folder will be generated in the project root folder. 
-
-This folder is a ready to be used Bifrost Library. To load it in Bifrost, simply set a "**BIFROST_LIB_CONFIG_FILES**" environment variable pointing to the "**bifrost_lib_config.json**" files inside this folder.
-
 ## Dependencies
 **Sort Array With Indices** relies on the Bifrost SDK (2.5 or greater) along with Intel oneTBB. 
 
 In order to link these libraries, you must set "**BIFROST_LOCATION**" and "**TBB_DIR**" CMake or environment variables.
+
+## Build and install
+When building and using the CMake install command , a "**sort_array_with_indices**" folder will be generated in the project root folder. 
+
+This folder is a ready to be used Bifrost library. To load it in Bifrost, simply set a "**BIFROST_LIB_CONFIG_FILES**" environment variable pointing to the "**bifrost_lib_config.json**" files inside this folder.
 
 ## Compiler
 This project was setup to be compiled with Clang on Visual Studio for windows. 
