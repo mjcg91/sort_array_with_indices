@@ -7,7 +7,7 @@ It behaves exactly the same except that it can also sort all vector types (uint2
 ## Dependencies
 **Sort Array With Indices** relies on the Autodesk Bifrost SDK (2.5 or greater) along with Intel oneTBB. 
 
-You must set BIFROST_LOCATION and TBB_DIR CMake variables in order to include these libraries.
+You must set <sub>BIFROST_LOCATION</sub> and <sub>TBB_DIR</sub> CMake variables in order to include these libraries.
 
 ## Compiler
 This project was setup to be compiled with Visual Studio and Clang for windows. The compiler path is hard coded in the root [CMakeLists](CMakeLists.txt). 
