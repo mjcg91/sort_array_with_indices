@@ -14,9 +14,7 @@ In order to link these libraries, you must set **BIFROST_LOCATION** and **TBB_DI
 ## Compiler
 This project was setup to be compiled with Clang on Visual Studio for windows. 
 
-The compiler path is hard coded in the root [CMakeLists](CMakeLists.txt). 
-
-If you don't use and Clang and Visual Studio Windows, remove the part of the code declaring the compiler and linker paths.
+If you don't use and Clang and Visual Studio Windows, remove the part of the code declaring the compiler and linker paths in the root [CMakeLists](CMakeLists.txt).
 
 ## License
 **Sort Array With Indices** is released under the [MIT License](LICENSE.md).
