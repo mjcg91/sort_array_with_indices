@@ -1,11 +1,14 @@
-# Sort Array With Indices
+# Sort Array With Indices - For Autodesk Bifrost
 
-This is a variant of Autodesk Bifrost's built-in "sort_array_with_indices". It behaves exactly the same except that it can also sort all vector types (uint2, float3, long4...).
+This operator is a variant of Autodesk Bifrost's built-in **"sort_array_with_indices"**. It behaves exactly the same except that it can also sort all vector types (uint2, float3, long4...).
 
-This nodes is faster at sorting randomized array, however it is about 30% slower when sorting descening sequences or partially sorted arrays.
+This nodes is usually faster at sorting large and randomized array, however it is ~30% slower at sorting descening sequences or partially sorted arrays.
 
 ## Dependencies
-This library requires the Autodesk Bifrost SDK along with Intel oneTBB.
+**Sort Array With Indices** requires the Autodesk Bifrost SDK along with Intel oneTBB. To complie this, you must set BIFROST_LOCATION and TBB_DIR CMake variables.
 
+## Compiler
+This project was compiled with Clang for windows. The compiler path and flags are hard coded in the root CMakeLists.txt. If you don't use Clang for Windows, remove this part of the code.
 
-To complie this, you will Need to set BIFROST_LOCATION and TBB_DIR CMake variables. They 
+## License
+**Sort Array With Indices** is released under the [MIT License](LICENSE.md).
