@@ -46,12 +46,8 @@ project(sort_array_with_indices VERSION 1.0.0 LANGUAGES CXX)
 set(SORT_ARRAY_WITH_INDICES_PACK_DIR "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}") 
 
 # ------------------------------------------------------------------------------
-# Include CMake modules
+# Include dependencies
 # ------------------------------------------------------------------------------
-# Set dependencies path for windows
-set( BIFROST_LOCATION "C:/MJCG/dev/external/bifrost/2.5.0.0")
-set( TBB_DIR "C:/MJCG/dev/external/oneTBB/oneapi-tbb-2021.5.0")
-
 # Check BIFROST_LOCATION
 if( NOT BIFROST_LOCATION )
     if( DEFINED ENV{BIFROST_LOCATION} )
@@ -63,7 +59,7 @@ endif()
 
 # Check TBB_DIR
 if( NOT TBB_DIR )
-    if( DEFINED $ENV{TBB_DIR} )
+    if( DEFINED ENV{TBB_DIR} )
         set( TBB_DIR $ENV{TBB_DIR})
     else()
         message( FATAL_ERROR "TBB: TBB_DIR cmake variable must be defined.")
