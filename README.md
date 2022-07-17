@@ -2,9 +2,9 @@
 
 This operator is a variant of Bifrost's built-in "**sort_array_with_indices**". 
 
-It behaves exactly the same except that it can also sort all vector types (uint2, float3, long4...). 
+It behaves exactly the same as the built-in one, except that it can also sort all vector types (uint2, float3, long4...). 
 
-The sorting is performed using a parallel Merge-Sort method. This operator usually runs faster at sorting large and randomized array, however it is ~30% slower at sorting descending sequences or partially sorted arrays.
+The sorting is performed using an hybrid parallel Merge-Sort method. This operator usually runs faster than the built-in one at sorting large and randomized arrays, however it is ~30% slower at sorting descending sequences or partially sorted arrays.
 
 ## Dependencies
 **Sort Array With Indices** relies on the Bifrost SDK (2.5 or greater) along with Intel oneTBB. 

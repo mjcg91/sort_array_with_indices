@@ -41,11 +41,11 @@ void sort_array_with_indices(
 { 
     if (descending_order) {
         init_merge_sort<float>(array, sorted_indices, runtimeServices,
-            [&](float firuntimeServicest, float second) { return compare_descending_vec1(firuntimeServicest, second); });
+            [&](float first, float second) { return compare_descending_vec1(first, second); });
     }
     else {
         init_merge_sort<float>(array, sorted_indices, runtimeServices,
-            [&](float firuntimeServicest, float second) { return compare_ascending_vec1(firuntimeServicest, second); });
+            [&](float first, float second) { return compare_ascending_vec1(first, second); });
     }
 }
 
@@ -58,11 +58,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<double>(array, sorted_indices, runtimeServices,
-            [&](double firuntimeServicest, double second) { return compare_descending_vec1(firuntimeServicest, second); });
+            [&](double first, double second) { return compare_descending_vec1(first, second); });
     }
     else {
         init_merge_sort<double>(array, sorted_indices, runtimeServices,
-            [&](double firuntimeServicest, double second) { return compare_ascending_vec1(firuntimeServicest, second); });
+            [&](double first, double second) { return compare_ascending_vec1(first, second); });
     }
 }
 
@@ -75,11 +75,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<char>(array, sorted_indices, runtimeServices,
-            [&](char firuntimeServicest, char second) { return compare_descending_vec1(firuntimeServicest, second); });
+            [&](char first, char second) { return compare_descending_vec1(first, second); });
     }
     else {
         init_merge_sort<char>(array, sorted_indices, runtimeServices,
-            [&](char firuntimeServicest, char second) { return compare_ascending_vec1(firuntimeServicest, second); });
+            [&](char first, char second) { return compare_ascending_vec1(first, second); });
     }
 }
 
@@ -92,11 +92,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<short>(array, sorted_indices, runtimeServices,
-            [&](short firuntimeServicest, short second) { return compare_descending_vec1(firuntimeServicest, second); });
+            [&](short first, short second) { return compare_descending_vec1(first, second); });
     }
     else {
         init_merge_sort<short>(array, sorted_indices, runtimeServices,
-            [&](short firuntimeServicest, short second) { return compare_ascending_vec1(firuntimeServicest, second); });
+            [&](short first, short second) { return compare_ascending_vec1(first, second); });
     }
 }
 
@@ -109,11 +109,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<int>(array, sorted_indices, runtimeServices,
-            [&](int firuntimeServicest, int second) { return compare_descending_vec1(firuntimeServicest, second); });
+            [&](int first, int second) { return compare_descending_vec1(first, second); });
     }
     else {
         init_merge_sort<int>(array, sorted_indices, runtimeServices,
-            [&](int firuntimeServicest, int second) { return compare_ascending_vec1(firuntimeServicest, second); });
+            [&](int first, int second) { return compare_ascending_vec1(first, second); });
     }
 }
 
@@ -126,11 +126,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<long long>(array, sorted_indices, runtimeServices,
-            [&](long long firuntimeServicest, long long second) { return compare_descending_vec1(firuntimeServicest, second); });
+            [&](long long first, long long second) { return compare_descending_vec1(first, second); });
     }
     else {
         init_merge_sort<long long>(array, sorted_indices, runtimeServices,
-            [&](long long firuntimeServicest, long long second) { return compare_ascending_vec1(firuntimeServicest, second); });
+            [&](long long first, long long second) { return compare_ascending_vec1(first, second); });
     }
 }
 
@@ -143,11 +143,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<unsigned char>(array, sorted_indices, runtimeServices,
-            [&](unsigned char firuntimeServicest, unsigned char second) { return compare_descending_vec1(firuntimeServicest, second); });
+            [&](unsigned char first, unsigned char second) { return compare_descending_vec1(first, second); });
     }
     else {
         init_merge_sort<unsigned char>(array, sorted_indices, runtimeServices,
-            [&](unsigned char firuntimeServicest, unsigned char second) { return compare_ascending_vec1(firuntimeServicest, second); });
+            [&](unsigned char first, unsigned char second) { return compare_ascending_vec1(first, second); });
     }
 }
 
@@ -160,11 +160,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<unsigned short>(array, sorted_indices, runtimeServices,
-            [&](unsigned short firuntimeServicest, unsigned short second) { return compare_descending_vec1(firuntimeServicest, second); });
+            [&](unsigned short first, unsigned short second) { return compare_descending_vec1(first, second); });
     }
     else {
         init_merge_sort<unsigned short>(array, sorted_indices, runtimeServices,
-            [&](unsigned short firuntimeServicest, unsigned short second) { return compare_ascending_vec1(firuntimeServicest, second); });
+            [&](unsigned short first, unsigned short second) { return compare_ascending_vec1(first, second); });
     }
 }
 
@@ -177,11 +177,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<unsigned int>(array, sorted_indices, runtimeServices,
-            [&](unsigned int firuntimeServicest, unsigned int second) { return compare_descending_vec1(firuntimeServicest, second); });
+            [&](unsigned int first, unsigned int second) { return compare_descending_vec1(first, second); });
     }
     else {
         init_merge_sort<unsigned int>(array, sorted_indices, runtimeServices,
-            [&](unsigned int firuntimeServicest, unsigned int second) { return compare_ascending_vec1(firuntimeServicest, second); });
+            [&](unsigned int first, unsigned int second) { return compare_ascending_vec1(first, second); });
     }
 }
 
@@ -194,11 +194,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<unsigned long long>(array, sorted_indices, runtimeServices,
-            [&](float firuntimeServicest, float second) { return compare_descending_vec1(firuntimeServicest, second); });
+            [&](float first, float second) { return compare_descending_vec1(first, second); });
     }
     else {
         init_merge_sort<unsigned long long>(array, sorted_indices, runtimeServices,
-            [&](float firuntimeServicest, float second) { return compare_ascending_vec1(firuntimeServicest, second); });
+            [&](float first, float second) { return compare_ascending_vec1(first, second); });
     }
 }
 
@@ -213,11 +213,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::float2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::float2 firuntimeServicest, Bifrost::Math::float2 second) { return compare_descending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::float2 first, Bifrost::Math::float2 second) { return compare_descending_vec2(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::float2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::float2 firuntimeServicest, Bifrost::Math::float2 second) { return compare_ascending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::float2 first, Bifrost::Math::float2 second) { return compare_ascending_vec2(first, second); });
     }
 }
 
@@ -230,11 +230,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::double2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::double2 firuntimeServicest, Bifrost::Math::double2 second) { return compare_descending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::double2 first, Bifrost::Math::double2 second) { return compare_descending_vec2(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::double2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::double2 firuntimeServicest, Bifrost::Math::double2 second) { return compare_ascending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::double2 first, Bifrost::Math::double2 second) { return compare_ascending_vec2(first, second); });
     }
 }
 
@@ -247,11 +247,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::char2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::char2 firuntimeServicest, Bifrost::Math::char2 second) { return compare_descending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::char2 first, Bifrost::Math::char2 second) { return compare_descending_vec2(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::char2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::char2 firuntimeServicest, Bifrost::Math::char2 second) { return compare_ascending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::char2 first, Bifrost::Math::char2 second) { return compare_ascending_vec2(first, second); });
     }
 }
 
@@ -264,11 +264,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::short2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::short2 firuntimeServicest, Bifrost::Math::short2 second) { return compare_descending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::short2 first, Bifrost::Math::short2 second) { return compare_descending_vec2(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::short2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::short2 firuntimeServicest, Bifrost::Math::short2 second) { return compare_ascending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::short2 first, Bifrost::Math::short2 second) { return compare_ascending_vec2(first, second); });
     }
 }
 
@@ -281,11 +281,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::int2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::int2 firuntimeServicest, Bifrost::Math::int2 second) { return compare_descending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::int2 first, Bifrost::Math::int2 second) { return compare_descending_vec2(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::int2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::int2 firuntimeServicest, Bifrost::Math::int2 second) { return compare_ascending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::int2 first, Bifrost::Math::int2 second) { return compare_ascending_vec2(first, second); });
     }
 }
 
@@ -298,11 +298,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::long2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::long2 firuntimeServicest, Bifrost::Math::long2 second) { return compare_descending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::long2 first, Bifrost::Math::long2 second) { return compare_descending_vec2(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::long2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::long2 firuntimeServicest, Bifrost::Math::long2 second) { return compare_ascending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::long2 first, Bifrost::Math::long2 second) { return compare_ascending_vec2(first, second); });
     }
 }
 
@@ -315,11 +315,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::uchar2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uchar2 firuntimeServicest, Bifrost::Math::uchar2 second) { return compare_descending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::uchar2 first, Bifrost::Math::uchar2 second) { return compare_descending_vec2(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::uchar2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uchar2 firuntimeServicest, Bifrost::Math::uchar2 second) { return compare_ascending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::uchar2 first, Bifrost::Math::uchar2 second) { return compare_ascending_vec2(first, second); });
     }
 }
 
@@ -332,11 +332,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::ushort2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ushort2 firuntimeServicest, Bifrost::Math::ushort2 second) { return compare_descending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::ushort2 first, Bifrost::Math::ushort2 second) { return compare_descending_vec2(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::ushort2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ushort2 firuntimeServicest, Bifrost::Math::ushort2 second) { return compare_ascending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::ushort2 first, Bifrost::Math::ushort2 second) { return compare_ascending_vec2(first, second); });
     }
 }
 
@@ -349,11 +349,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::uint2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uint2 firuntimeServicest, Bifrost::Math::uint2 second) { return compare_descending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::uint2 first, Bifrost::Math::uint2 second) { return compare_descending_vec2(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::uint2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uint2 firuntimeServicest, Bifrost::Math::uint2 second) { return compare_ascending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::uint2 first, Bifrost::Math::uint2 second) { return compare_ascending_vec2(first, second); });
     }
 }
 
@@ -366,11 +366,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::ulong2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ulong2 firuntimeServicest, Bifrost::Math::ulong2 second) { return compare_descending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::ulong2 first, Bifrost::Math::ulong2 second) { return compare_descending_vec2(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::ulong2>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ulong2 firuntimeServicest, Bifrost::Math::ulong2 second) { return compare_ascending_vec2(firuntimeServicest, second); });
+            [&](Bifrost::Math::ulong2 first, Bifrost::Math::ulong2 second) { return compare_ascending_vec2(first, second); });
     }
 }
 
@@ -385,11 +385,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::float3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::float3 firuntimeServicest, Bifrost::Math::float3 second) { return compare_descending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::float3 first, Bifrost::Math::float3 second) { return compare_descending_vec3(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::float3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::float3 firuntimeServicest, Bifrost::Math::float3 second) { return compare_ascending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::float3 first, Bifrost::Math::float3 second) { return compare_ascending_vec3(first, second); });
     }
 }
 
@@ -402,11 +402,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::double3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::double3 firuntimeServicest, Bifrost::Math::double3 second) { return compare_descending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::double3 first, Bifrost::Math::double3 second) { return compare_descending_vec3(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::double3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::double3 firuntimeServicest, Bifrost::Math::double3 second) { return compare_ascending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::double3 first, Bifrost::Math::double3 second) { return compare_ascending_vec3(first, second); });
     }
 }
 
@@ -419,11 +419,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::char3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::char3 firuntimeServicest, Bifrost::Math::char3 second) { return compare_descending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::char3 first, Bifrost::Math::char3 second) { return compare_descending_vec3(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::char3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::char3 firuntimeServicest, Bifrost::Math::char3 second) { return compare_ascending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::char3 first, Bifrost::Math::char3 second) { return compare_ascending_vec3(first, second); });
     }
 }
 
@@ -436,11 +436,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::short3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::short3 firuntimeServicest, Bifrost::Math::short3 second) { return compare_descending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::short3 first, Bifrost::Math::short3 second) { return compare_descending_vec3(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::short3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::short3 firuntimeServicest, Bifrost::Math::short3 second) { return compare_ascending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::short3 first, Bifrost::Math::short3 second) { return compare_ascending_vec3(first, second); });
     }
 }
 
@@ -453,11 +453,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::int3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::int3 firuntimeServicest, Bifrost::Math::int3 second) { return compare_descending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::int3 first, Bifrost::Math::int3 second) { return compare_descending_vec3(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::int3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::int3 firuntimeServicest, Bifrost::Math::int3 second) { return compare_ascending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::int3 first, Bifrost::Math::int3 second) { return compare_ascending_vec3(first, second); });
     }
 }
 
@@ -470,11 +470,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::long3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::long3 firuntimeServicest, Bifrost::Math::long3 second) { return compare_descending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::long3 first, Bifrost::Math::long3 second) { return compare_descending_vec3(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::long3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::long3 firuntimeServicest, Bifrost::Math::long3 second) { return compare_ascending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::long3 first, Bifrost::Math::long3 second) { return compare_ascending_vec3(first, second); });
     }
 }
 
@@ -487,11 +487,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::uchar3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uchar3 firuntimeServicest, Bifrost::Math::uchar3 second) { return compare_descending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::uchar3 first, Bifrost::Math::uchar3 second) { return compare_descending_vec3(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::uchar3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uchar3 firuntimeServicest, Bifrost::Math::uchar3 second) { return compare_ascending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::uchar3 first, Bifrost::Math::uchar3 second) { return compare_ascending_vec3(first, second); });
     }
 }
 
@@ -504,11 +504,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::ushort3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ushort3 firuntimeServicest, Bifrost::Math::ushort3 second) { return compare_descending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::ushort3 first, Bifrost::Math::ushort3 second) { return compare_descending_vec3(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::ushort3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ushort3 firuntimeServicest, Bifrost::Math::ushort3 second) { return compare_ascending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::ushort3 first, Bifrost::Math::ushort3 second) { return compare_ascending_vec3(first, second); });
     }
 }
 
@@ -521,11 +521,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::uint3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uint3 firuntimeServicest, Bifrost::Math::uint3 second) { return compare_descending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::uint3 first, Bifrost::Math::uint3 second) { return compare_descending_vec3(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::uint3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uint3 firuntimeServicest, Bifrost::Math::uint3 second) { return compare_ascending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::uint3 first, Bifrost::Math::uint3 second) { return compare_ascending_vec3(first, second); });
     }
 }
 
@@ -538,11 +538,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::ulong3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ulong3 firuntimeServicest, Bifrost::Math::ulong3 second) { return compare_descending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::ulong3 first, Bifrost::Math::ulong3 second) { return compare_descending_vec3(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::ulong3>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ulong3 firuntimeServicest, Bifrost::Math::ulong3 second) { return compare_ascending_vec3(firuntimeServicest, second); });
+            [&](Bifrost::Math::ulong3 first, Bifrost::Math::ulong3 second) { return compare_ascending_vec3(first, second); });
     }
 }
 
@@ -557,11 +557,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::float4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::float4 firuntimeServicest, Bifrost::Math::float4 second) { return compare_descending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::float4 first, Bifrost::Math::float4 second) { return compare_descending_vec4(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::float4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::float4 firuntimeServicest, Bifrost::Math::float4 second) { return compare_ascending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::float4 first, Bifrost::Math::float4 second) { return compare_ascending_vec4(first, second); });
     }
 }
 
@@ -574,11 +574,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::double4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::double4 firuntimeServicest, Bifrost::Math::double4 second) { return compare_descending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::double4 first, Bifrost::Math::double4 second) { return compare_descending_vec4(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::double4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::double4 firuntimeServicest, Bifrost::Math::double4 second) { return compare_ascending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::double4 first, Bifrost::Math::double4 second) { return compare_ascending_vec4(first, second); });
     }
 }
 
@@ -591,11 +591,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::char4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::char4 firuntimeServicest, Bifrost::Math::char4 second) { return compare_descending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::char4 first, Bifrost::Math::char4 second) { return compare_descending_vec4(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::char4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::char4 firuntimeServicest, Bifrost::Math::char4 second) { return compare_ascending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::char4 first, Bifrost::Math::char4 second) { return compare_ascending_vec4(first, second); });
     }
 }
 
@@ -608,11 +608,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::short4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::short4 firuntimeServicest, Bifrost::Math::short4 second) { return compare_descending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::short4 first, Bifrost::Math::short4 second) { return compare_descending_vec4(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::short4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::short4 firuntimeServicest, Bifrost::Math::short4 second) { return compare_ascending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::short4 first, Bifrost::Math::short4 second) { return compare_ascending_vec4(first, second); });
     }
 }
 
@@ -625,11 +625,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::int4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::int4 firuntimeServicest, Bifrost::Math::int4 second) { return compare_descending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::int4 first, Bifrost::Math::int4 second) { return compare_descending_vec4(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::int4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::int4 firuntimeServicest, Bifrost::Math::int4 second) { return compare_ascending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::int4 first, Bifrost::Math::int4 second) { return compare_ascending_vec4(first, second); });
     }
 }
 
@@ -642,11 +642,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::long4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::long4 firuntimeServicest, Bifrost::Math::long4 second) { return compare_descending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::long4 first, Bifrost::Math::long4 second) { return compare_descending_vec4(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::long4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::long4 firuntimeServicest, Bifrost::Math::long4 second) { return compare_ascending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::long4 first, Bifrost::Math::long4 second) { return compare_ascending_vec4(first, second); });
     }
 }
 
@@ -659,11 +659,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::uchar4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uchar4 firuntimeServicest, Bifrost::Math::uchar4 second) { return compare_descending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::uchar4 first, Bifrost::Math::uchar4 second) { return compare_descending_vec4(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::uchar4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uchar4 firuntimeServicest, Bifrost::Math::uchar4 second) { return compare_ascending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::uchar4 first, Bifrost::Math::uchar4 second) { return compare_ascending_vec4(first, second); });
     }
 }
 
@@ -676,11 +676,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::ushort4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ushort4 firuntimeServicest, Bifrost::Math::ushort4 second) { return compare_descending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::ushort4 first, Bifrost::Math::ushort4 second) { return compare_descending_vec4(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::ushort4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ushort4 firuntimeServicest, Bifrost::Math::ushort4 second) { return compare_ascending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::ushort4 first, Bifrost::Math::ushort4 second) { return compare_ascending_vec4(first, second); });
     }
 }
 
@@ -693,11 +693,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::uint4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uint4 firuntimeServicest, Bifrost::Math::uint4 second) { return compare_descending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::uint4 first, Bifrost::Math::uint4 second) { return compare_descending_vec4(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::uint4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::uint4 firuntimeServicest, Bifrost::Math::uint4 second) { return compare_ascending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::uint4 first, Bifrost::Math::uint4 second) { return compare_ascending_vec4(first, second); });
     }
 }
 
@@ -710,11 +710,11 @@ void sort_array_with_indices(
 {
     if (descending_order) {
         init_merge_sort<Bifrost::Math::ulong4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ulong4 firuntimeServicest, Bifrost::Math::ulong4 second) { return compare_descending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::ulong4 first, Bifrost::Math::ulong4 second) { return compare_descending_vec4(first, second); });
     }
     else {
         init_merge_sort<Bifrost::Math::ulong4>(array, sorted_indices, runtimeServices,
-            [&](Bifrost::Math::ulong4 firuntimeServicest, Bifrost::Math::ulong4 second) { return compare_ascending_vec4(firuntimeServicest, second); });
+            [&](Bifrost::Math::ulong4 first, Bifrost::Math::ulong4 second) { return compare_ascending_vec4(first, second); });
     }
 }
 
